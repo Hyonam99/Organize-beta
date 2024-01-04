@@ -17,15 +17,15 @@ $primary-color: #5534ec;
 
 //mixins
 @mixin flex-col-4 {
-    display: flex;
-    flex-direction: column;
-    gap: .4rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
 }
 
 @mixin flex-row-8 {
-    display: flex;
-    align-items: center;
-    gap: .8rem; 
+	display: flex;
+	align-items: center;
+	gap: 0.8rem;
 }
 
 a {
@@ -40,32 +40,32 @@ body {
 }
 
 nav {
-    padding: .8rem 1rem;
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 900px;
+	padding: 0.8rem 1rem;
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	max-width: 900px;
 
-    .logo {
-        font-size: 1.8rem;
-        letter-spacing: 2px;
-        font-weight: bold;
-        filter: drop-shadow(0 0 0.2em #e467e9);
-    }
+	.logo {
+		font-size: 1.8rem;
+		letter-spacing: 2px;
+		font-weight: bold;
+		filter: drop-shadow(0 0 0.2em #e467e9);
+	}
 
-    ul {
-        list-style-type: none;
-        @include flex-row-8();
+	ul {
+		list-style-type: none;
+		@include flex-row-8();
 
-        li {
-            a {
-                color: #fff;
-                 &:hover,
-                 &.active,
-                 &:focus {
-                    filter: drop-shadow(0 0 .2em #e467e9);
-                 }
-            }
-        }
-    }
+		li {
+			a {
+				color: #fff;
+				&:hover,
+				&.active,
+				&:focus {
+					filter: drop-shadow(0 0 0.2em #e467e9);
+				}
+			}
+		}
+	}
 }

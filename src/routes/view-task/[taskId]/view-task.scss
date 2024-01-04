@@ -1,0 +1,24 @@
+@import "../../../_base.scss";
+
+.view_task-detail {
+
+        
+    >p {
+        font-style: italic;
+        font-size: smaller;
+        color: hsl(251, 83%, 80%);
+    }
+    
+    .edit-task-detail {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        button {
+            padding: .2rem .8rem;
+            border: 0;
+            border-radius: .2rem;
+            cursor: pointer;
+        }
+    }
+}

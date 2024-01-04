@@ -1,6 +1,7 @@
 <script>
 	import { SvelteUIProvider } from '@svelteuidev/core';
     import "../_base.scss";
+
 </script>
 
 <SvelteUIProvider themeObserver="dark">

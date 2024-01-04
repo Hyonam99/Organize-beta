@@ -1,4 +1,5 @@
 <script lang="ts">
+	import TaskStatus from "$components/task-status/TaskStatus.svelte";
     import { TaskStore } from "$store/store"
     import type { TaskDTO } from "$lib/types/custom.d.js";
     import "./taskcard.scss";
@@ -14,11 +15,11 @@
 
 <div class="task_card_container">
     <aside>
-        <small>{cardProps.priority}</small>
+        <TaskStatus status={cardProps.priority} />
         <h4>{cardProps.title}</h4>
-        <p>{cardProps.desc.substring(0, 56)}...</p>
     </aside>
-    <div class="task_card_delete-btn">
+    <div class="task_card_options">
+        <a href="/view-task/{cardProps.id}">view</a>
         <button on:click={() => { handleDelete(cardProps.id)}}>x</button>
     </div>
 </div>

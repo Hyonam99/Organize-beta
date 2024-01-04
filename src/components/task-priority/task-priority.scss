@@ -5,7 +5,30 @@
     @include flex-row-8();
 }
 
-.task_priority_container >label {
-    flex-direction: row-reverse;
-    gap: .2rem; 
+.task_priority_container {
+
+    >label {
+        flex-direction: row-reverse;
+        gap: .2rem; 
+        color: #34d59d;
+
+        input[type="radio"] {
+            accent-color: #34d59d;
+        }
+
+        &:nth-child(2) { 
+            color: #ff9000; 
+            
+            input[type="radio"] {
+                accent-color: #ff9000;
+            }
+        }
+        &:nth-child(3) { 
+            color: #da0a0a; 
+            
+            input[type="radio"] {
+                accent-color: #da0a0a;
+            }
+        }
+    }
 }

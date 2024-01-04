@@ -36,3 +36,18 @@
         }
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    .task_input_container {
+    
+        form {
+            
+            >label {
+    
+                input, textarea {
+                    color: #000;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+@import "../../_base.scss";
+
+.status {
+	width: fit-content;
+    height: fit-content;
+	padding: .1rem .3rem;
+	font-size: .8rem;
+	font-weight: 600;
+	line-height: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: .6em;
+	border: none;
+    margin-bottom: .3rem;
+}
+
+.status::before {
+	margin-right: 0.9rem;
+	width: 0.6rem;
+	height: 0.6rem;
+	content: "";
+	border-radius: 50%;
+	display: block;
+}
+
+
+.low {
+	color: #34d59d;
+	background: hsla(159, 65%, 59%, 0.06);
+}
+
+.low::before {
+	background: #34d59d;
+}
+
+.important {
+	color: #ff9000;
+	background: hsla(34, 100%, 50%, 0.06);
+}
+
+.important::before {
+	background: #ff9000;
+}
+
+.urgent {
+	color: #da0a0a;
+	background: hsla(0, 91%, 45%, 0.06);
+}
+
+.urgent::before {
+	background: #da0a0a;
+}
