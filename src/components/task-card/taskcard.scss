@@ -1,0 +1,39 @@
+@import "../../_base.scss";
+
+.task_card_container {
+	background-color: $primary-color;
+	color: #fff;
+	padding: 0.3rem 0.8rem;
+	border-radius: 0.4rem;
+	display: flex;
+	place-items: center;
+	justify-content: space-between;
+	margin-bottom: 0.3rem;
+
+	small,
+	p,
+	h4 {
+		margin: 0;
+		line-height: 1.1;
+	}
+
+    h4 {
+        text-transform: lowercase;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+    p {
+        font-style: italic;
+        font-size: smaller;
+        color: hsl(251, 83%, 80%);
+    }
+}
+
+.task_card_delete-btn button {
+	background: transparent;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-size: large;
+}

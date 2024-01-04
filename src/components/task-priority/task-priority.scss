@@ -1,0 +1,11 @@
+@import "../../_base.scss";
+
+.task_priority_container,
+.task_priority_container >label {
+    @include flex-row-8();
+}
+
+.task_priority_container >label {
+    flex-direction: row-reverse;
+    gap: .2rem; 
+}

@@ -1,0 +1,15 @@
+main {
+	margin: 0 auto;
+	max-width: 900px;
+	padding: 0 0.6rem;
+
+	h3 {
+		font-size: 1.3rem;
+	}
+}
+
+.organize_header {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 0.2rem;
+}
